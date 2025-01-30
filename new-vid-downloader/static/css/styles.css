@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #000000, #00f2fe);
+    color: #333;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(18, 4, 4, 0.1);
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+form input, form select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background: #4facfe;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #00c4fe;
+}
+
+#progress-container {
+    width: 100%;
+    background: #ccc;
+    border-radius: 5px;
+    margin: 20px 0;
+    height: 20px;
+    display: none;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0;
+    background: #4facfe;
+    border-radius: 5px;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#status .success {
+    color: green;
+}
+
+#status .error {
+    color: red;
+}
+
+/* Preview Section Styling */
+#preview-section {
+    margin-top: 30px;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Mid-sized */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#preview-section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#videoPreview {
+    width: 100%;
+    max-width: 360px; /* Mid-sized video */
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}

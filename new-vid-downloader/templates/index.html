@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Video Downloader</h1>
+        
+        <!-- Form for video download -->
+        <form id="videoForm">
+            <label for="platform">Select Platform:</label>
+            <select id="platform">
+                <option value="youtube">YouTube</option>
+                <option value="instagram">Instagram</option>
+                <option value="pinterest">Pinterest</option>
+            </select>
+            <input type="text" id="videoUrl" placeholder="Enter video URL" required>
+            <button type="submit">Download Video</button>
+        </form>
+
+        <!-- Progress Bar -->
+        <div id="progress-container" style="display: none; margin-top: 20px;">
+            <div id="progress-bar"></div>
+        </div>
+
+        <!-- Status Messages -->
+        <div id="status"></div>
+
+        <!-- Video Review Section -->
+        <div id="preview-section" style="display: none; margin-top: 10px;">
+            <h2>Video Preview</h2>
+            <video id="videoPreview" controls width="100%"></video>
+        </div>
+    </div>
+</body>
+</html>
